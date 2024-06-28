@@ -1,0 +1,14 @@
+.swiper-wrapper {
+  overflow: visible !important;
+}
+
+/* swiper linear loop */
+.swiper.is-home .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+/* stratz Accordions */
+
+.fs_accordion-2_item.is-active-accordion .fs_accordion-2_header {
+  color: white !important;
+}
