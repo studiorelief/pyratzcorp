@@ -12,3 +12,8 @@
 .fs_accordion-2_item.is-active-accordion .fs_accordion-2_header {
   color: white !important;
 }
+
+.section_popup-stratz:visible ~ .main-wrapper {
+  background-color: red !important;
+  overflow: hidden;
+}

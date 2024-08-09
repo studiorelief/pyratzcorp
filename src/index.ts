@@ -13,6 +13,9 @@ window.Webflow ||= [];
 window.Webflow.push(() => {
   Promise.all([
     loadScript('https://cdn.jsdelivr.net/npm/@finsweet/attributes-accordion@1/accordion.js'),
+    loadScript(
+      'https://cdn.jsdelivr.net/npm/@finsweet/attributes-scrolldisable@1/scrolldisable.js'
+    ),
   ]);
 
   // Global
