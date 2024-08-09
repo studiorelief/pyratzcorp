@@ -13,7 +13,32 @@
   color: white !important;
 }
 
-.section_popup-stratz:visible ~ .main-wrapper {
-  background-color: red !important;
-  overflow: hidden;
+input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox-label {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  position: relative;
+  pointer-events: none;
+}
+
+input[type='checkbox']:checked + .checkbox-label {
+  background-color: rgba(0, 0, 0, 0.05); /* Fond noir avec 5% d'opacité quand coché */
+}
+
+input[type='checkbox']:checked + .checkbox-label::after {
+  content: '';
+  position: absolute;
+  width: 0.3125rem;
+  height: 0.625rem;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  top: 0.25rem;
+  left: 0.5rem;
+  transform: rotate(45deg);
 }
