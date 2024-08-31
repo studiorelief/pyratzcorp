@@ -2,6 +2,13 @@
   overflow: visible !important;
 }
 
+/* fix issue */
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; 
+}
+
 /* swiper linear loop */
 .swiper.is-home .swiper-wrapper {
   transition-timing-function: linear;
